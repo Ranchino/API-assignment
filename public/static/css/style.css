@@ -1,3 +1,77 @@
-h1 {
-    color: red;
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#container{
+  display: flex; 
+  flex-direction: column; 
+  justify-items: center;
+}
+
+.searchName{
+  padding-top: 0.5em;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 0;
+}
+
+
+#app-display {
+  width: 20em;
+  height: 5em;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  top: 0.5em;
+  padding-top: -1em;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+#city, #country {
+  color: aqua;
+}
+
+#weather {
+ margin-top: 10px;
+}
+
+#temp {
+  color: green;
+}
+
+#searchPlace{
+  height: 8em;
+  background-color: black;
+  color: white;
+}
+
+#searchForm{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  
+}
+
+#searchBox{
+  height: 2.4em;
+  width: 15em;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#searchButton{
+  height: 2.5em;
+  width: 5em;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
