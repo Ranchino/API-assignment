@@ -15,14 +15,14 @@ app.listen(port, () => console.log(`Exempel app listening on port ${port}!`));
 
 app.use(express.static('public'));
 
-const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
-const apiKey = '&&APPID=f12b78c622bfdaeac652753b0c7762b0';
-const country = 'Sweden';
-const unit = '&units=metric';
 
 
 
 app.get('/getWeather/:city', function (req, res) {
+    const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
+    const apiKey = '&&APPID=f12b78c622bfdaeac652753b0c7762b0';
+    const country = 'Sweden';
+    const unit = '&units=metric';
     var city = req.params.city; 
     const url = baseUrl+city+","+country+unit+apiKey;
 
@@ -33,5 +33,17 @@ app.get('/getWeather/:city', function (req, res) {
     })
     .catch(err => console.log(err))
 
+})
+
+app.get('/getCityInfo/:city', function (req, res) {
+    var city = req.params.city;
+    const url = `https://restcountries.eu/rest/v2/capital/${city}`;
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        res.send(data)
+    })
+    .catch(err => console.log(err))
 })
 
