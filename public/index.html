@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Väder och karta</title>
+    <title>Weather and capital city information</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/static/images/weather.png"/>
     <script src="/static/script/script.js"></script>
@@ -16,27 +16,31 @@
         <div id="searchPlace">
 
             <form id="searchForm">
-                <h2 class="searchName">Sök här! 🧐</h2>
-                <h3 class="searchName">Skriv in den huvudstad du vill söka på.</h3><br>
+                <h2 class="searchName">Search here! 🧐</h2>
+                <h3 class="searchName">Write in the capital you want to know more about.</h3><br>
                 <span>
-                    <input id="searchBox" type="text" name="searchBox" placeholder="tex: Stockholm"></input>
-                    <button id="searchButton" onclick="submitButton()">Sök</button>
+                    <input id="searchBox" type="text" name="searchBox" placeholder="ex: Stockholm"></input>
+                    <button id="searchButton" onclick="submitButton()">Search</button>
                 </span>
             </form>
         </div>
 
         <div id="app-display">
             
-            <h2>Väder app</h2>
+            <h2>Weather app</h2>
             
             <div id="location">
-                Vädret för: <span id="city">Laddar...</span>, <span id="country"></span>
+                Weather for: <span id="city">Loading...</span>, <span id="country"></span>
             </div>
 
             <div id="weather">
 
                 <div class="row">
-                Det är <span id="temp"></span> här!
+                Oohhh it´s <span id="temp"></span> over there!
+                </div>
+
+                <div class="row">
+                    Forecast: <span id="foreCast"></span>
                 </div>
 
             </div>
@@ -44,6 +48,14 @@
         </div>
         
         <div id="cityContainer">
+
+            <div id="countryPopulation">
+                <u>There is <span id="population"></span> people living in <span id="countryName"></span></u>
+            </div>
+
+            <div id="imageFlag">
+
+            </div>
 
         </div>
     </div>
