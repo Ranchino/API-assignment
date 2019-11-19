@@ -1,6 +1,6 @@
 # A school assignment built with Express and Node.js
-## Uses fetch to make a get requests from two APIs.
-### This app App will show based from the input field information and get weather forecast in celsius and also get information about the capitals country with a flag and population. The default information is Stockholm.
+## Using fetch to make a get requests from two APIs.
+### This app will display weather from a capital city, flag for that country as well as number of inhabitants of the country based on what you are searching for from the input field. The default information is Stockholm/Sweden.
 
 ### To run this app
 1. Run "npm install" to install dependencies
