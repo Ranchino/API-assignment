@@ -77,17 +77,32 @@ h1, h2, h3 {
 }
 
 #searchBox{
-  height: 2.4em;
-  width: 15em;
+  height: 2.6em;
+  width: 20em;
   box-sizing: border-box;
   border-radius: 8px;
 }
 
 #searchButton{
-  height: 2.5em;
-  width: 5em;
+  height: 2.7em;
+  width: 10em;
   box-sizing: border-box;
   border-radius: 8px;
+}
+
+p{
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#searchArea{
+  margin-top: -0.5em;
 }
 
 #imageFlag{
@@ -99,4 +114,5 @@ h1, h2, h3 {
   font-weight: bold;
   font-size: large;
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

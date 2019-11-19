@@ -16,11 +16,11 @@
         <div id="searchPlace">
 
             <form id="searchForm">
-                <h2 class="searchName">Search here! 🧐</h2>
-                <h3 class="searchName">Write in the capital you want to know more about.</h3><br>
-                <span>
+                <h2 class="searchName">Enter the capital you want to know more about</h2>
+                <h3 class="searchName">Search here! 🧐</h3><br>
+                <span id="searchArea">
                     <input id="searchBox" type="text" name="searchBox" placeholder="ex: Stockholm"></input>
-                    <button id="searchButton" onclick="submitButton()">Search</button>
+                    <button id="searchButton" onclick="submitButton()"><p>Search</p></button>
                 </span>
             </form>
         </div>
@@ -53,9 +53,7 @@
                 <u>There is <span id="population"></span> people living in <span id="countryName"></span></u>
             </div>
 
-            <div id="imageFlag">
-
-            </div>
+            <div id="imageFlag"></div>
 
         </div>
     </div>

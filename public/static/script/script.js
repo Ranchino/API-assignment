@@ -35,7 +35,7 @@ function getWeather(inputText){
     (async () => {
         const response = await fetch(url, {});
         const responseData = await response.json();
-        console.log(responseData);
+        /* console.log(responseData); */
         renderWeather(responseData);
     })()
 }
@@ -58,13 +58,13 @@ function getCityInfo(inputText){
     (async () => {
         const response = await fetch(url, {});
         const responseData = await response.json();
-        console.log(responseData);
+        /* console.log(responseData); */
         renderCityInfo(responseData);
     })()
 }
 
 function renderCityInfo(responseData){
-    console.log("Info om staden funkar");
+    /* console.log("Info om staden funkar"); */
     var populationContainer = document.getElementById("population");
     var countryName = document.getElementById("countryName");
     var imageFlag = document.getElementById("imageFlag");
