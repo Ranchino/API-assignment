@@ -104,13 +104,15 @@ function noModal(){
     document.getElementById("modal").style.display = "none";
 }
 
-var modal = document.getElementById("modal");
+window.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("modal").addEventListener("click", noModal, false);
+});
 
-window.addEventListener("click", function(event) {
+/* window.addEventListener("click", function(event) {
     if (event.target == modal) {
         console.log("klicket funkar");
     }
-});
+}); */
 /* window.onclick = function(event) {
     if (modal.style.display == "block") {
         document.getElementById("myDialog").close();
