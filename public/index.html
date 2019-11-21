@@ -19,7 +19,7 @@
                 <h2 class="searchName">Enter the capital you want to know more about</h2>
                 <h3 class="searchName">Search here! 🧐</h3><br>
                 <span id="searchArea">
-                    <input id="searchBox" type="text" name="searchBox" placeholder="ex: Stockholm" autofocus></input>
+                    <input id="searchBox" type="text" name="searchBox" placeholder="ex: stockholm" autofocus></input>
                     <button id="searchButton" onclick="submitButton()">Search</button>
                 </span>
             </form>
@@ -55,6 +55,12 @@
 
             <div id="imageFlag"></div>
 
+        </div>
+
+        <div id="modal">
+            <dialog id="myDialog">Type an official capital city
+                <button class="close" onclick="noModal()">&times;</button>
+            </dialog>
         </div>
     </div>
     

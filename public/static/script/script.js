@@ -11,6 +11,8 @@ function submitButton(){
         console.log('match');
         getWeather(inputText);
         getCityInfo(inputText);
+    }else{
+        displayModal();
     }
     
 }
@@ -90,6 +92,31 @@ function renderCityInfo(responseData){
     countryName.innerHTML = responseData[0].name;
     populationContainer.innerHTML = responseData[0].population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+
+function displayModal() {
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("myDialog").showModal(); 
+}
+
+function noModal(){
+    document.getElementById("myDialog").close();
+    document.getElementById("modal").style.display = "none";
+}
+
+var modal = document.getElementById("modal");
+
+window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+        console.log("klicket funkar");
+    }
+});
+/* window.onclick = function(event) {
+    if (modal.style.display == "block") {
+        document.getElementById("myDialog").close();
+        document.getElementById("modal").style.display = "none";
+    }
+} */
 
 listOfCapitals = [ "abu dhabi", 
 "abuja", 
