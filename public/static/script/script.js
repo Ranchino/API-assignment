@@ -7,8 +7,11 @@ function initSite(){
 function submitButton(){
     event.preventDefault();
     var inputText = document.getElementById("searchBox").value;
-    getWeather(inputText);
-    getCityInfo(inputText);
+    if(listOfCapitals.indexOf(inputText) !== -1) {
+        console.log('match');
+        getWeather(inputText);
+        getCityInfo(inputText);
+    }
     
 }
 
@@ -20,8 +23,11 @@ if(element != null){
       if (event.keyCode === 13) {
         event.preventDefault();
         document.getElementById("searchButton").click();
-        getWeather(inputText);
-        getCityInfo(inputText);
+        if(listOfCapitals.indexOf(inputText) !== -1) {
+            console.log('match');
+            getWeather(inputText);
+            getCityInfo(inputText);
+        }
       }
     });
 }else{

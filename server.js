@@ -20,8 +20,8 @@ app.use(express.static('public'));
 
 app.get('/getWeather/:city', function (req, res) {
     const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
-    /* const apiKey = '&&APPID=f12b78c622bfdaeac652753b0c7762b0'; */
-    const apiKey = '&&APPID=aab1b3554741d4087b84336149261dd3';
+    const apiKey = '&&APPID=f12b78c622bfdaeac652753b0c7762b0';
+    /* const apiKey = '&&APPID=aab1b3554741d4087b84336149261dd3'; */
     const country = 'Sweden';
     const unit = '&units=metric';
     var city = req.params.city; 
