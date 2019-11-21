@@ -20,7 +20,7 @@ function submitButton(){
 var inputText,
 element = document.getElementById("searchBox");
 if(element != null){
-    inputText = element.value;
+    inputText = element.value.toLowerCase();
     inputText.addEventListener("keyup", function(event) {
       if (event.keyCode === 13) {
         event.preventDefault();
