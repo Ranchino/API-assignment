@@ -6,7 +6,7 @@ function initSite(){
 
 function submitButton(){
     event.preventDefault();
-    var inputText = document.getElementById("searchBox").value;
+    var inputText = document.getElementById("searchBox").value.toLowerCase();
     if(listOfCapitals.indexOf(inputText) !== -1) {
         console.log('match');
         getWeather(inputText);
@@ -29,6 +29,8 @@ if(element != null){
             console.log('match');
             getWeather(inputText);
             getCityInfo(inputText);
+        }else{
+            displayModal();
         }
       }
     });
