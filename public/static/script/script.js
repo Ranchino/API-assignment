@@ -8,7 +8,7 @@ function submitButton(){
     event.preventDefault();
     var inputText = document.getElementById("searchBox").value.toLowerCase();
     if(listOfCapitals.indexOf(inputText) !== -1) {
-        console.log('match');
+        /* console.log('match'); */
         getWeather(inputText);
         getCityInfo(inputText);
     }else{
@@ -26,7 +26,7 @@ if(element != null){
         event.preventDefault();
         document.getElementById("searchButton").click();
         if(listOfCapitals.indexOf(inputText) !== -1) {
-            console.log('match');
+            /* console.log('match'); */
             getWeather(inputText);
             getCityInfo(inputText);
         }else{
@@ -110,17 +110,6 @@ window.addEventListener('DOMContentLoaded', function () {
     document.getElementById("modal").addEventListener("click", noModal, false);
 });
 
-/* window.addEventListener("click", function(event) {
-    if (event.target == modal) {
-        console.log("klicket funkar");
-    }
-}); */
-/* window.onclick = function(event) {
-    if (modal.style.display == "block") {
-        document.getElementById("myDialog").close();
-        document.getElementById("modal").style.display = "none";
-    }
-} */
 
 listOfCapitals = [ "abu dhabi", 
 "abuja", 
